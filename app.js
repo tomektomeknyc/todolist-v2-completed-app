@@ -13,7 +13,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 mongoose.connect("mongodb://localhost:27017/todolistDB", {useNewUrlParser: true});
-
+// To connect to Mongo Atlas DB
+//mongoose.connect("mongodb+srv://tomektomeknyc:<password>@cluster0.exdoc9t.mongodb.net/todolistDB", {useNewUrlParser: true, useUnifiedTopology: true});
 const itemsSchema = {
   name: String
 };
